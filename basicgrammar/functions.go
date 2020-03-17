@@ -1,6 +1,7 @@
 package main
 
-import ("fmt" "unsafe")
+import ("fmt")
+
 
 
 //函数可以返回一个或者多个值，具体看add和multipl函数
@@ -22,11 +23,6 @@ func multiple2(x , y int)(str string ,z int){
 	z=x
 	return
 }
-
-//外部实现,这里其实可以不定义结构体
-//后续补充go:linkname
-func FlushICache(begin,end int)
-
 
 
 func main() {
